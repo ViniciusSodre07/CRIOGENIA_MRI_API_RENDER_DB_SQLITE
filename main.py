@@ -67,7 +67,7 @@ def historico():
 
     cursor.execute("""
         SELECT *
-        FROM helium_levels
+        FROM helium_level
         ORDER BY id DESC
         LIMIT 20
     """)
