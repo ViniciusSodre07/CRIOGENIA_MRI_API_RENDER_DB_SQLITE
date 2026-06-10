@@ -2,7 +2,8 @@
 import requests
 import time
 
-url = "http://127.0.0.1:8000/update_helium_level"
+#url = "http://127.0.0.1:8000/update_helium_level"
+url="https://criogenia-mri-api-render-db-sqlite.onrender.com/update_helium_level"
 
 nivel = 80.0
 
@@ -17,6 +18,6 @@ while True:
     print("Enviado:", nivel)
     print("Resposta:", r.text)
 
-    nivel -= 0.1
+    nivel -= 1
 
     time.sleep(2)
